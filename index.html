@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steam ウィッシュリスト合計計算機DEKINAI</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Steam ウィッシュリスト計算機</h2>
+    <p style="font-size: 0.85rem; color: #8f98a0;">
+      Steam Web API Key と プロフィール/ウィッシュリストのURLの入力plz。
+    </p>
+
+    <div style="margin-bottom: 12px;">
+      <label style="font-size: 0.8rem; color: #66c0f4;">Steam API Key</label>
+      <input type="password" id="apiKey" placeholder="API Key を入力" style="width: 100%; box-sizing: border-box; margin-top: 4px;">
+      <p style="font-size: 0.75rem; color: #8f98a0; margin: 4px 0 0 0;">
+        ※API Keyは <a href="https://steamcommunity.com/dev/apikey" target="_blank" style="color: #66c0f4;">steamcommunity.com/dev/apikey</a> から発行してね。
+      </p>
+    </div>
+
+    <div style="margin-bottom: 15px;">
+      <label style="font-size: 0.8rem; color: #66c0f4;">Steam URL / SteamID64</label>
+      <input type="text" id="url" placeholder="https://store.steampowered.com/wishlist/profiles/76561198409233951/" style="width: 100%; box-sizing: border-box; margin-top: 4px;">
+    </div>
+
+    <button id="calcBtn" style="width: 100%;">計算</button>
+
+    <div id="result">結果が出るとこ！バイト金額よね</div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
